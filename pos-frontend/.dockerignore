@@ -1,0 +1,18 @@
+# Dependencias y compilados
+node_modules/
+dist/
+build/
+
+# Archivos de entorno
+.env
+.env.development
+
+# Logs y caché
+npm-debug.log*
+.yarn-integrity
+.cache/
+
+# Sistema e IDE
+.DS_Store
+.idea/
+.vscode/

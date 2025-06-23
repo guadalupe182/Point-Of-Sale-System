@@ -1,0 +1,21 @@
+# Archivos de IDE/editor
+.idea/
+.vscode/
+*.iml
+*.swp
+
+# Builds y logs
+target/
+*.log
+*.jar
+
+# Archivos de sistema
+.DS_Store
+
+# Variables de entorno (excepto las de producción)
+.env
+.env.local
+
+# Git
+.git/
+.gitignore
