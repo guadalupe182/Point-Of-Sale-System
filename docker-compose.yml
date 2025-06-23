@@ -20,7 +20,7 @@ services:
       start_period: 40s  
 
   backend:
-    iamge: pos-backend:prod
+    image: pos-backend:prod
     ports:
       - "8080:8080"
     depends_on:
