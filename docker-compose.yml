@@ -20,21 +20,20 @@ services:
       start_period: 40s  
 
   backend:
-    build: ./pos-backend
+    iamge: pos-backend:prod
     ports:
       - "8080:8080"
     depends_on:
       db:
         condition: service_healthy
     environment:
-      SPRING_PROFILES_ACTIVE: docker
+      SPRING_PROFILES_ACTIVE: prod
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/pos
       
   frontend:
-    build: ./pos-frontend
+    image: pos-frontend:prod
     ports:
-      - "3000:3000"
-    volumes:
-      - ./pos-frontend/src:/app/src
+      - "80:3000"
 
 volumes:
   mysql_data:
